@@ -1,4 +1,4 @@
-# GeminiCommerce\Urlmanager\BasicOperationsApi
+# OpenAPI\Client\BasicOperationsApi
 
 All URIs are relative to https://urlmanager.api.gogemini.io, except if the operation defines another base path.
 
@@ -37,14 +37,19 @@ Modify the request path of a specific URL rewrite configuration.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Urlmanager\Api\BasicOperationsApi(
+
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Urlmanager\Model\UrlmanagerChangeUrlRewriteRequestPathRequest(); // \GeminiCommerce\Urlmanager\Model\UrlmanagerChangeUrlRewriteRequestPathRequest
+$body = new \OpenAPI\Client\Model\UrlmanagerChangeUrlRewriteRequestPathRequest(); // \OpenAPI\Client\Model\UrlmanagerChangeUrlRewriteRequestPathRequest
 
 try {
     $result = $apiInstance->urlManagerChangeUrlRewriteRequestPath($body);
@@ -58,7 +63,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Urlmanager\Model\UrlmanagerChangeUrlRewriteRequestPathRequest**](../Model/UrlmanagerChangeUrlRewriteRequestPathRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\UrlmanagerChangeUrlRewriteRequestPathRequest**](../Model/UrlmanagerChangeUrlRewriteRequestPathRequest.md)|  | |
 
 ### Return type
 
@@ -66,7 +71,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -94,14 +99,19 @@ Modify the request path of a specific URL rewrite configuration.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Urlmanager\Api\BasicOperationsApi(
+
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Urlmanager\Model\UrlmanagerChangeUrlRewriteRequestPathRequest(); // \GeminiCommerce\Urlmanager\Model\UrlmanagerChangeUrlRewriteRequestPathRequest
+$body = new \OpenAPI\Client\Model\UrlmanagerChangeUrlRewriteRequestPathRequest(); // \OpenAPI\Client\Model\UrlmanagerChangeUrlRewriteRequestPathRequest
 
 try {
     $result = $apiInstance->urlManagerChangeUrlRewriteRequestPath2($body);
@@ -115,7 +125,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Urlmanager\Model\UrlmanagerChangeUrlRewriteRequestPathRequest**](../Model/UrlmanagerChangeUrlRewriteRequestPathRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\UrlmanagerChangeUrlRewriteRequestPathRequest**](../Model/UrlmanagerChangeUrlRewriteRequestPathRequest.md)|  | |
 
 ### Return type
 
@@ -123,7 +133,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -137,7 +147,7 @@ No authorization required
 ## `urlManagerCreateUrlRewrite()`
 
 ```php
-urlManagerCreateUrlRewrite($body): \GeminiCommerce\Urlmanager\Model\UrlmanagerUrlRewrite
+urlManagerCreateUrlRewrite($body): \OpenAPI\Client\Model\UrlmanagerUrlRewrite
 ```
 
 Create Url Rewrite
@@ -151,14 +161,19 @@ Create a new URL rewrite configuration with customizable rules.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Urlmanager\Api\BasicOperationsApi(
+
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Urlmanager\Model\UrlmanagerCreateUrlRewriteRequest(); // \GeminiCommerce\Urlmanager\Model\UrlmanagerCreateUrlRewriteRequest
+$body = new \OpenAPI\Client\Model\UrlmanagerCreateUrlRewriteRequest(); // \OpenAPI\Client\Model\UrlmanagerCreateUrlRewriteRequest
 
 try {
     $result = $apiInstance->urlManagerCreateUrlRewrite($body);
@@ -172,15 +187,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Urlmanager\Model\UrlmanagerCreateUrlRewriteRequest**](../Model/UrlmanagerCreateUrlRewriteRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\UrlmanagerCreateUrlRewriteRequest**](../Model/UrlmanagerCreateUrlRewriteRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Urlmanager\Model\UrlmanagerUrlRewrite**](../Model/UrlmanagerUrlRewrite.md)
+[**\OpenAPI\Client\Model\UrlmanagerUrlRewrite**](../Model/UrlmanagerUrlRewrite.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -194,7 +209,7 @@ No authorization required
 ## `urlManagerCreateUrlRewrite2()`
 
 ```php
-urlManagerCreateUrlRewrite2($body): \GeminiCommerce\Urlmanager\Model\UrlmanagerUrlRewrite
+urlManagerCreateUrlRewrite2($body): \OpenAPI\Client\Model\UrlmanagerUrlRewrite
 ```
 
 Create Url Rewrite
@@ -208,14 +223,19 @@ Create a new URL rewrite configuration with customizable rules.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Urlmanager\Api\BasicOperationsApi(
+
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Urlmanager\Model\UrlmanagerCreateUrlRewriteRequest(); // \GeminiCommerce\Urlmanager\Model\UrlmanagerCreateUrlRewriteRequest
+$body = new \OpenAPI\Client\Model\UrlmanagerCreateUrlRewriteRequest(); // \OpenAPI\Client\Model\UrlmanagerCreateUrlRewriteRequest
 
 try {
     $result = $apiInstance->urlManagerCreateUrlRewrite2($body);
@@ -229,15 +249,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Urlmanager\Model\UrlmanagerCreateUrlRewriteRequest**](../Model/UrlmanagerCreateUrlRewriteRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\UrlmanagerCreateUrlRewriteRequest**](../Model/UrlmanagerCreateUrlRewriteRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Urlmanager\Model\UrlmanagerUrlRewrite**](../Model/UrlmanagerUrlRewrite.md)
+[**\OpenAPI\Client\Model\UrlmanagerUrlRewrite**](../Model/UrlmanagerUrlRewrite.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -265,14 +285,19 @@ Delete an existing URL rewrite configuration.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Urlmanager\Api\BasicOperationsApi(
+
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Urlmanager\Model\UrlmanagerDeleteUrlRewriteRequest(); // \GeminiCommerce\Urlmanager\Model\UrlmanagerDeleteUrlRewriteRequest
+$body = new \OpenAPI\Client\Model\UrlmanagerDeleteUrlRewriteRequest(); // \OpenAPI\Client\Model\UrlmanagerDeleteUrlRewriteRequest
 
 try {
     $result = $apiInstance->urlManagerDeleteUrlRewrite($body);
@@ -286,7 +311,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Urlmanager\Model\UrlmanagerDeleteUrlRewriteRequest**](../Model/UrlmanagerDeleteUrlRewriteRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\UrlmanagerDeleteUrlRewriteRequest**](../Model/UrlmanagerDeleteUrlRewriteRequest.md)|  | |
 
 ### Return type
 
@@ -294,7 +319,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -322,14 +347,19 @@ Delete an existing URL rewrite configuration.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Urlmanager\Api\BasicOperationsApi(
+
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Urlmanager\Model\UrlmanagerDeleteUrlRewriteRequest(); // \GeminiCommerce\Urlmanager\Model\UrlmanagerDeleteUrlRewriteRequest
+$body = new \OpenAPI\Client\Model\UrlmanagerDeleteUrlRewriteRequest(); // \OpenAPI\Client\Model\UrlmanagerDeleteUrlRewriteRequest
 
 try {
     $result = $apiInstance->urlManagerDeleteUrlRewrite2($body);
@@ -343,7 +373,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Urlmanager\Model\UrlmanagerDeleteUrlRewriteRequest**](../Model/UrlmanagerDeleteUrlRewriteRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\UrlmanagerDeleteUrlRewriteRequest**](../Model/UrlmanagerDeleteUrlRewriteRequest.md)|  | |
 
 ### Return type
 
@@ -351,7 +381,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -365,7 +395,7 @@ No authorization required
 ## `urlManagerGetUrlRewrite()`
 
 ```php
-urlManagerGetUrlRewrite($body): \GeminiCommerce\Urlmanager\Model\UrlmanagerUrlRewrite
+urlManagerGetUrlRewrite($body): \OpenAPI\Client\Model\UrlmanagerUrlRewrite
 ```
 
 Get Url Rewrite
@@ -379,14 +409,19 @@ Retrieve the details of a specific URL rewrite configuration.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Urlmanager\Api\BasicOperationsApi(
+
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Urlmanager\Model\UrlmanagerGetUrlRewriteRequest(); // \GeminiCommerce\Urlmanager\Model\UrlmanagerGetUrlRewriteRequest
+$body = new \OpenAPI\Client\Model\UrlmanagerGetUrlRewriteRequest(); // \OpenAPI\Client\Model\UrlmanagerGetUrlRewriteRequest
 
 try {
     $result = $apiInstance->urlManagerGetUrlRewrite($body);
@@ -400,15 +435,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Urlmanager\Model\UrlmanagerGetUrlRewriteRequest**](../Model/UrlmanagerGetUrlRewriteRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\UrlmanagerGetUrlRewriteRequest**](../Model/UrlmanagerGetUrlRewriteRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Urlmanager\Model\UrlmanagerUrlRewrite**](../Model/UrlmanagerUrlRewrite.md)
+[**\OpenAPI\Client\Model\UrlmanagerUrlRewrite**](../Model/UrlmanagerUrlRewrite.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -422,7 +457,7 @@ No authorization required
 ## `urlManagerGetUrlRewrite2()`
 
 ```php
-urlManagerGetUrlRewrite2($body): \GeminiCommerce\Urlmanager\Model\UrlmanagerUrlRewrite
+urlManagerGetUrlRewrite2($body): \OpenAPI\Client\Model\UrlmanagerUrlRewrite
 ```
 
 Get Url Rewrite
@@ -436,14 +471,19 @@ Retrieve the details of a specific URL rewrite configuration.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Urlmanager\Api\BasicOperationsApi(
+
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Urlmanager\Model\UrlmanagerGetUrlRewriteRequest(); // \GeminiCommerce\Urlmanager\Model\UrlmanagerGetUrlRewriteRequest
+$body = new \OpenAPI\Client\Model\UrlmanagerGetUrlRewriteRequest(); // \OpenAPI\Client\Model\UrlmanagerGetUrlRewriteRequest
 
 try {
     $result = $apiInstance->urlManagerGetUrlRewrite2($body);
@@ -457,15 +497,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Urlmanager\Model\UrlmanagerGetUrlRewriteRequest**](../Model/UrlmanagerGetUrlRewriteRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\UrlmanagerGetUrlRewriteRequest**](../Model/UrlmanagerGetUrlRewriteRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Urlmanager\Model\UrlmanagerUrlRewrite**](../Model/UrlmanagerUrlRewrite.md)
+[**\OpenAPI\Client\Model\UrlmanagerUrlRewrite**](../Model/UrlmanagerUrlRewrite.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -479,7 +519,7 @@ No authorization required
 ## `urlManagerListUrlRewrites()`
 
 ```php
-urlManagerListUrlRewrites($body): \GeminiCommerce\Urlmanager\Model\UrlmanagerListUrlRewritesResponse
+urlManagerListUrlRewrites($body): \OpenAPI\Client\Model\UrlmanagerListUrlRewritesResponse
 ```
 
 List Url Rewrites
@@ -493,14 +533,19 @@ Retrieve a list of all URL rewrite configurations in your application.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Urlmanager\Api\BasicOperationsApi(
+
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Urlmanager\Model\UrlmanagerListUrlRewritesRequest(); // \GeminiCommerce\Urlmanager\Model\UrlmanagerListUrlRewritesRequest
+$body = new \OpenAPI\Client\Model\UrlmanagerListUrlRewritesRequest(); // \OpenAPI\Client\Model\UrlmanagerListUrlRewritesRequest
 
 try {
     $result = $apiInstance->urlManagerListUrlRewrites($body);
@@ -514,15 +559,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Urlmanager\Model\UrlmanagerListUrlRewritesRequest**](../Model/UrlmanagerListUrlRewritesRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\UrlmanagerListUrlRewritesRequest**](../Model/UrlmanagerListUrlRewritesRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Urlmanager\Model\UrlmanagerListUrlRewritesResponse**](../Model/UrlmanagerListUrlRewritesResponse.md)
+[**\OpenAPI\Client\Model\UrlmanagerListUrlRewritesResponse**](../Model/UrlmanagerListUrlRewritesResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -536,7 +581,7 @@ No authorization required
 ## `urlManagerListUrlRewrites2()`
 
 ```php
-urlManagerListUrlRewrites2($body): \GeminiCommerce\Urlmanager\Model\UrlmanagerListUrlRewritesResponse
+urlManagerListUrlRewrites2($body): \OpenAPI\Client\Model\UrlmanagerListUrlRewritesResponse
 ```
 
 List Url Rewrites
@@ -550,14 +595,19 @@ Retrieve a list of all URL rewrite configurations in your application.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Urlmanager\Api\BasicOperationsApi(
+
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Urlmanager\Model\UrlmanagerListUrlRewritesRequest(); // \GeminiCommerce\Urlmanager\Model\UrlmanagerListUrlRewritesRequest
+$body = new \OpenAPI\Client\Model\UrlmanagerListUrlRewritesRequest(); // \OpenAPI\Client\Model\UrlmanagerListUrlRewritesRequest
 
 try {
     $result = $apiInstance->urlManagerListUrlRewrites2($body);
@@ -571,15 +621,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Urlmanager\Model\UrlmanagerListUrlRewritesRequest**](../Model/UrlmanagerListUrlRewritesRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\UrlmanagerListUrlRewritesRequest**](../Model/UrlmanagerListUrlRewritesRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Urlmanager\Model\UrlmanagerListUrlRewritesResponse**](../Model/UrlmanagerListUrlRewritesResponse.md)
+[**\OpenAPI\Client\Model\UrlmanagerListUrlRewritesResponse**](../Model/UrlmanagerListUrlRewritesResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -593,7 +643,7 @@ No authorization required
 ## `urlManagerListUrlRewritesByTargetPaths()`
 
 ```php
-urlManagerListUrlRewritesByTargetPaths($body): \GeminiCommerce\Urlmanager\Model\UrlmanagerListUrlRewritesByTargetPathsRequest
+urlManagerListUrlRewritesByTargetPaths($body): \OpenAPI\Client\Model\UrlmanagerListUrlRewritesByTargetPathsRequest
 ```
 
 List Url Rewrites By Target Paths
@@ -607,14 +657,19 @@ Retrieve URL rewrite configurations based on target paths.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Urlmanager\Api\BasicOperationsApi(
+
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Urlmanager\Model\UrlmanagerListUrlRewritesByTargetPathsRequest(); // \GeminiCommerce\Urlmanager\Model\UrlmanagerListUrlRewritesByTargetPathsRequest
+$body = new \OpenAPI\Client\Model\UrlmanagerListUrlRewritesByTargetPathsRequest(); // \OpenAPI\Client\Model\UrlmanagerListUrlRewritesByTargetPathsRequest
 
 try {
     $result = $apiInstance->urlManagerListUrlRewritesByTargetPaths($body);
@@ -628,15 +683,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Urlmanager\Model\UrlmanagerListUrlRewritesByTargetPathsRequest**](../Model/UrlmanagerListUrlRewritesByTargetPathsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\UrlmanagerListUrlRewritesByTargetPathsRequest**](../Model/UrlmanagerListUrlRewritesByTargetPathsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Urlmanager\Model\UrlmanagerListUrlRewritesByTargetPathsRequest**](../Model/UrlmanagerListUrlRewritesByTargetPathsRequest.md)
+[**\OpenAPI\Client\Model\UrlmanagerListUrlRewritesByTargetPathsRequest**](../Model/UrlmanagerListUrlRewritesByTargetPathsRequest.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -650,7 +705,7 @@ No authorization required
 ## `urlManagerListUrlRewritesByTargetPaths2()`
 
 ```php
-urlManagerListUrlRewritesByTargetPaths2($body): \GeminiCommerce\Urlmanager\Model\UrlmanagerListUrlRewritesByTargetPathsRequest
+urlManagerListUrlRewritesByTargetPaths2($body): \OpenAPI\Client\Model\UrlmanagerListUrlRewritesByTargetPathsRequest
 ```
 
 List Url Rewrites By Target Paths
@@ -664,14 +719,19 @@ Retrieve URL rewrite configurations based on target paths.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Urlmanager\Api\BasicOperationsApi(
+
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Urlmanager\Model\UrlmanagerListUrlRewritesByTargetPathsRequest(); // \GeminiCommerce\Urlmanager\Model\UrlmanagerListUrlRewritesByTargetPathsRequest
+$body = new \OpenAPI\Client\Model\UrlmanagerListUrlRewritesByTargetPathsRequest(); // \OpenAPI\Client\Model\UrlmanagerListUrlRewritesByTargetPathsRequest
 
 try {
     $result = $apiInstance->urlManagerListUrlRewritesByTargetPaths2($body);
@@ -685,15 +745,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Urlmanager\Model\UrlmanagerListUrlRewritesByTargetPathsRequest**](../Model/UrlmanagerListUrlRewritesByTargetPathsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\UrlmanagerListUrlRewritesByTargetPathsRequest**](../Model/UrlmanagerListUrlRewritesByTargetPathsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Urlmanager\Model\UrlmanagerListUrlRewritesByTargetPathsRequest**](../Model/UrlmanagerListUrlRewritesByTargetPathsRequest.md)
+[**\OpenAPI\Client\Model\UrlmanagerListUrlRewritesByTargetPathsRequest**](../Model/UrlmanagerListUrlRewritesByTargetPathsRequest.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -707,7 +767,7 @@ No authorization required
 ## `urlManagerResolveUrlRewrite()`
 
 ```php
-urlManagerResolveUrlRewrite($body): \GeminiCommerce\Urlmanager\Model\UrlmanagerUrlRewrite
+urlManagerResolveUrlRewrite($body): \OpenAPI\Client\Model\UrlmanagerUrlRewrite
 ```
 
 Resolve Url Rewrite
@@ -721,14 +781,19 @@ Resolve and retrieve the rewritten URL for a given input URL.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Urlmanager\Api\BasicOperationsApi(
+
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Urlmanager\Model\UrlmanagerResolveUrlRewriteRequest(); // \GeminiCommerce\Urlmanager\Model\UrlmanagerResolveUrlRewriteRequest
+$body = new \OpenAPI\Client\Model\UrlmanagerResolveUrlRewriteRequest(); // \OpenAPI\Client\Model\UrlmanagerResolveUrlRewriteRequest
 
 try {
     $result = $apiInstance->urlManagerResolveUrlRewrite($body);
@@ -742,15 +807,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Urlmanager\Model\UrlmanagerResolveUrlRewriteRequest**](../Model/UrlmanagerResolveUrlRewriteRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\UrlmanagerResolveUrlRewriteRequest**](../Model/UrlmanagerResolveUrlRewriteRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Urlmanager\Model\UrlmanagerUrlRewrite**](../Model/UrlmanagerUrlRewrite.md)
+[**\OpenAPI\Client\Model\UrlmanagerUrlRewrite**](../Model/UrlmanagerUrlRewrite.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -764,7 +829,7 @@ No authorization required
 ## `urlManagerResolveUrlRewrite2()`
 
 ```php
-urlManagerResolveUrlRewrite2($body): \GeminiCommerce\Urlmanager\Model\UrlmanagerUrlRewrite
+urlManagerResolveUrlRewrite2($body): \OpenAPI\Client\Model\UrlmanagerUrlRewrite
 ```
 
 Resolve Url Rewrite
@@ -778,14 +843,19 @@ Resolve and retrieve the rewritten URL for a given input URL.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Urlmanager\Api\BasicOperationsApi(
+
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Urlmanager\Model\UrlmanagerResolveUrlRewriteRequest(); // \GeminiCommerce\Urlmanager\Model\UrlmanagerResolveUrlRewriteRequest
+$body = new \OpenAPI\Client\Model\UrlmanagerResolveUrlRewriteRequest(); // \OpenAPI\Client\Model\UrlmanagerResolveUrlRewriteRequest
 
 try {
     $result = $apiInstance->urlManagerResolveUrlRewrite2($body);
@@ -799,15 +869,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Urlmanager\Model\UrlmanagerResolveUrlRewriteRequest**](../Model/UrlmanagerResolveUrlRewriteRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\UrlmanagerResolveUrlRewriteRequest**](../Model/UrlmanagerResolveUrlRewriteRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Urlmanager\Model\UrlmanagerUrlRewrite**](../Model/UrlmanagerUrlRewrite.md)
+[**\OpenAPI\Client\Model\UrlmanagerUrlRewrite**](../Model/UrlmanagerUrlRewrite.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 

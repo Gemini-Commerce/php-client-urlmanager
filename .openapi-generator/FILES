@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 .php-cs-fixer.dist.php
 .travis.yml
 README.md
@@ -45,20 +44,3 @@ lib/Model/UrlmanagerResolveUrlRewriteRequest.php
 lib/Model/UrlmanagerUrlRewrite.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
-test/Api/BasicOperationsApiTest.php
-test/Model/GetUrlRewriteRequestCompoundIdentifierTest.php
-test/Model/ListUrlRewritesRequestFilterTest.php
-test/Model/ProtobufAnyTest.php
-test/Model/RpcStatusTest.php
-test/Model/UrlRewriteLinkRelTest.php
-test/Model/UrlRewriteRedirectTypeTest.php
-test/Model/UrlmanagerChangeUrlRewriteRequestPathRequestTest.php
-test/Model/UrlmanagerCreateUrlRewriteRequestTest.php
-test/Model/UrlmanagerDeleteUrlRewriteRequestTest.php
-test/Model/UrlmanagerGetUrlRewriteRequestTest.php
-test/Model/UrlmanagerListUrlRewritesByTargetPathsRequestTest.php
-test/Model/UrlmanagerListUrlRewritesByTargetPathsResponseTest.php
-test/Model/UrlmanagerListUrlRewritesRequestTest.php
-test/Model/UrlmanagerListUrlRewritesResponseTest.php
-test/Model/UrlmanagerResolveUrlRewriteRequestTest.php
-test/Model/UrlmanagerUrlRewriteTest.php
